@@ -1,0 +1,8 @@
+first_input = input("первый список: ")
+first_list = [int(x) for x in first_input.split()]
+first_set = set(first_list)
+second_input = input("второй список: ")
+second_list = [int(x) for x in second_input.split()]
+second_set = set(second_list)
+common_elements = first_set.intersection(second_set)
+print("Общие элементы:", *common_elements)
